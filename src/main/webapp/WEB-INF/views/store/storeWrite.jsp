@@ -26,8 +26,13 @@
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/assets/css/nice-select.css">
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/assets/css/alter.css">
-			
-			
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/assets/css/store.css">		
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css">
+	
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyDCWiZsFceFXVQPtwtNU7pu7uEet1-FUGY" ></script>
+		
 			
 <!-- 	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css"> -->
 	
@@ -61,6 +66,7 @@
 
 
 <body>
+
 <!-- Preloader Start -->
  <div id="preloader-active">
      <div class="preloader d-flex align-items-center justify-content-center">
@@ -88,7 +94,7 @@
          <div class="row">
              <div class="col-xl-12">
                  <div class="hero-cap text-center pt-50">
-                     <h1>가게 <small>추가 페이지</small></h1>
+                     <h2>포차 등록</h2>
                  </div>
              </div>
          </div>
@@ -98,53 +104,48 @@
 
 <!-- Main Start -->
 
-	<h1>가게 
-		<small>추가 페이지</small>
-	</h1>
+
+	<div id="wrap">
+
 	<form role="form" id="frm" name="frm" action="storeWriteOk" method="post" enctype="multipart/form-data">	
 		<input type="hidden" class="input" name="${_csrf.parameterName }" value="${_csrf.token }"/>
 		<table>
 			<tr>
 				<th>포차 이름: </th>
-				<td id="td1"><input type="text" id="sname" name="sname" value="${sname }" placeholder="20글자 제한"></input></td>
+				<td id="td1"><input type="text" id="sname" name="sname" value="${sname }" placeholder="20글자 제한" style="width:400px;"></input></td>
 			</tr>
 			<tr>
 				<th>사업자 등록 번호: </th>
-				<td id="td1"><input type="text" id="sbiznum" name="sbiznum" value="${sbiznum }" placeholder="000-00-00000"></input> </td>
+				<td id="td1"><input type="text" id="sbiznum" name="sbiznum" value="${sbiznum }" placeholder="000-00-00000" style="width:400px;"></input> </td>
 			</tr>
 			<tr>
 				<th>포차 주소: </th>
-				<td id="td1"><input type="text" id="saddr" name="saddr" value="${saddr }" placeholder="도로명 주소"/></td>
+				<td id="td1"><input type="text" id="saddr" name="saddr" value="${saddr }" placeholder="도로명 주소"style="width:400px;"/></td>
 			</tr>
 			<tr>
 				<th>사장님의 한마디:</th>
-				<td id="td1"><input type="text" id="scomt" name="scomt" value="${scomt }" placeholder="매출 100만원!!!"/></td>
+				<td id="td1"><input type="text" id="scomt" name="scomt" value="${scomt }" placeholder="매출 100만원!!!"style="width:400px;"/></td>
 			</tr>
 			<tr>
 				<th>영업 시간:</th>
 				<td id="td1"><textarea id="sopinfo" name="sopinfo" value="${sopinfo }" rows="10" 
-							placeholder="월 10:00~22:00     화 12:00~22:00      수~금 10:00~22:00         주말 13:00~20:00" style="resize: none;"></textarea></td>
+							placeholder="주중 10:00~22:00, 주말 13:00~20:00" style="resize: none;"style="width:400px;"></textarea></td>
 				<td id="c_type">  </td>
 			</tr>
 			<tr>
 				<th>위도:</th>
-				<td id="td1"><input type="text" id="slat" name="slat" value="${slat }" placeholder="3x.xxxxxx"/></td>
+				<td id="td1"><input type="text" id="slat" name="slat" value="${slat }" placeholder="3x.xxxxxx"style="width:400px;"/></td>
 			</tr>
 			<tr>
 				<th>경도:</th>
-				<td id="td1"><input type="text" id="slng" name="slng" value="${slng }" placeholder="1xx.xxxxxx"/></td>
+				<td id="td1"><input type="text" id="slng" name="slng" value="${slng }" placeholder="1xx.xxxxxx"style="width:400px;"/></td>
 			</tr>
 			<tr>
 				<th>포차 메인 사진:</th>
 <%-- 				<td id="td1"><input type="text" id="spic" name="spic" value="${spic }"/></td> --%>
 				<td id="td1"><input type="file" name="file0" id="storeMain"></td>
 			</tr>
-		
-<!-- 			<tr>			 -->
-<!-- 				<th>넌 누구냐:</th> -->
-<%-- 				<td id="td1"><input type="text" id="uid" name="uid" value="${uid }"/></td> --%>
-<!-- 			</tr> -->
-			
+	
 		<tr>
 			<th>메뉴 사진: <input type="button" id="addTh" value="추가"></th>
 			<td id="td1">
@@ -165,28 +166,28 @@
 	</form>
 
 	<hr>
-	<div class="box-footer">
-		<button type="button" onclick="location.href = 'storeList'"><i class="fa fa-list"></i>포차 목록</button>
-		<button type="submit" class="btn btn-success"><i class="fa fa-save"></i> 저장</button>
-		<button type="reset" onclick="frm.reset()" class="btn btn-warning"><i class="fa fa-reply"></i> 초기화</button>  <!-- reset 버튼 동작하도록 작업 필요 -->
+		<div class="box-footer">
+			<button type="button" onclick="location.href = 'storeList'"><i class="fa fa-list"></i>포차 목록</button>
+			<button type="submit" class="btn-sm btn-success"><i class="fa fa-save"></i> 저장</button>
+			<button type="reset" onclick="frm.reset()" class="btn-sm btn-warning"><i class="fa fa-reply"></i> 초기화</button>  <!-- reset 버튼 동작하도록 작업 필요 -->
+		</div>
+
 	</div>
 
-
-
 <!-- <script id="fileTemplate" type="text/x-handlebars-template"> -->
-    <li>
-        <span class="mailbox-attachment-icon has-img">
-            <img src="{{imgSrc}}" alt="Attachment">
-        </span>
-        <div class="mailbox-attachment-info">
-            <a href="{{originalFileUrl}}" class="mailbox-attachment-name">
-                <i class="fa fa-paperclip"></i> {{originalFileName}}
-            </a>
-            <a href="{{fullName}}" class="btn btn-default btn-xs pull-right delBtn">
-                <i class="fa fa-fw fa-remove"></i>
-            </a>
-        </div>
-    </li>
+<!--     <li> -->
+<!--         <span class="mailbox-attachment-icon has-img"> -->
+<!--             <img src="{{imgSrc}}" alt="Attachment"> -->
+<!--         </span> -->
+<!--         <div class="mailbox-attachment-info"> -->
+<!--             <a href="{{originalFileUrl}}" class="mailbox-attachment-name"> -->
+<!--                 <i class="fa fa-paperclip"></i> {{originalFileName}} -->
+<!--             </a> -->
+<!--             <a href="{{fullName}}" class="btn btn-default btn-xs pull-right delBtn"> -->
+<!--                 <i class="fa fa-fw fa-remove"></i> -->
+<!--             </a> -->
+<!--         </div> -->
+<!--     </li> -->
 <!-- </script> -->
 <!-- <script type="text/javascript" src="/resources/dist/js/article_file_upload.js"></script> -->
 <%-- <script type="text/javascript" src="<c:url value='/resources/bower_components/jquery/dist/jquery.min.js'/>"></script> --%>
@@ -243,9 +244,9 @@
     	$('input#addTh').on('click',function(event){
     		event.preventDefault();
     		var tpl = '<div>'                                                                     
-    				+	'<input type="file" name="file'+(thN++)+'" />'                            
-					+    '<input type="text" name="menu'+(thN++)+'" />'                              
-				    +'<button class="btn delBtn btn-group btn-group-sm" name="file'+(thN++)+'" />'
+    				+'<input type="file" name="file'+(thN++)+'"/>'                            
+					+'<input type="text" name="menu'+(thN++)+'"  style="height:15px;"/>'                              
+				    +'<input type="button" class="btn delBtn btn-group btn-group-sm" name="file'+(thN++)+'" value="삭제" />'
 				    +'</div>';                                                                    
     		$('div#thArea').append(tpl);
     	})

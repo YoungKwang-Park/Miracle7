@@ -35,7 +35,7 @@ CREATE TABLE t_user (
 	u_regdate	DATE DEFAULT SYSDATE	NULL
 );
 
-SELECT * FROM T_USER ;
+SELECT * FROM T_store ;
 
 CREATE TABLE t_store (
 	s_uid	number		NOT NULL,
@@ -56,7 +56,7 @@ CREATE SEQUENCE t_store_seq;
 CREATE TABLE t_comment (
 	c_uid	number		NOT NULL,
 	c_content	clob		NULL,
-	c_regdate	DATE 	DEFAULT Sysdate,
+	c_regdate	DATE 	DEFAULT SYSDATE,
 	c_point	number		NULL,
 	u_id	varchar2(20)		NOT NULL,
 	s_uid	number		NOT NULL

@@ -164,7 +164,7 @@
 	<div id="wrap">
 		<div id="box body-store">		
 			<div id="box body-head"> <!-- //TODO  -->
-				<div><h3> ${list[0].sname }</h3></div>  <div>(${list[0].av}점, ${list[0].sccnt}개의 후기)</div>
+				<div><h3> ${list[0].sname }</h3></div>  <div>(${list[0].av}점, 총 ${list[0].sccnt}개의 후기)</div>
 				<i class="fas fa-map-marker-alt"> ${list[0].saddr }</i>  
 				<div class="box pull-right">
 					즐겨찾기: <img src="assets/img/store/store_fav0.jpg" alt="imgFav" width="15" height="15" onclick="">
@@ -189,22 +189,25 @@
 				</c:forEach>
 			</div>
 			
-			<div class="box body-store-info" style="height:200px; width:80%;">
-				<div class="box">
-					<div class="box" id="box-height">
+		<!-- 맵나와라 -->
+			<div class="box body-store-info" style="height:200px; width:900px; text-align: center;">
+				<div class="box" style="float:left;">
+					<div class="box" id="box-height" style="width:250px; padding:10px; margin:10px 10px 10px 40px;">
 						<b>사장님의 한마디:</b><br>
 						 ${list[0].scomt }
 					</div>
-					<div class="box" id="box-height">
+					<div class="box" id="box-height"style="width:250px;  padding:10px; margin:10px 10px 10px 40px;">
 						<b>운영 시간: </b><br>
 						${list[0].sopinfo }
 					</div>
 				</div>
-				<div id="map_ma" style="width: 30%">
-					<!-- 맵 -->
-				</div>				
+				<div style="padding:10px;"> 
+					<div id="map_ma" style="width: 450px; height: 180px; margin:0px 0px 0px 40px;">
+						<!-- 맵 -->
+					</div>				
+				</div>
 			</div>
-			
+			<div class="clear"/>
 			<hr />
 			<div>
 					<table style="margin-left: auto; margin-right: auto;">
@@ -230,10 +233,8 @@
 			    </form>
 			        
 			    <div><button onclick="location.href='storeList'" class="btn-sm btn-primary listBtn"><i class="fa fa-list"></i> 목록</button></div>
-			    	<div class="pull-right">
-			        	<button onclick="location.href='storeUpdate?suid=${list[0].suid }'" class="btn-sm btn-warning modBtn"><i class="fa fa-edit"></i> 정보 수정</button>
-			        	<button onclick="chkDelete(${list[0].suid })" class="btn-sm btn-danger delBtn"><i class="fa fa-trash"></i> 포차 삭제</button>  
-			    	</div>
+			        <button onclick="location.href='storeUpdate?suid=${list[0].suid }'" class="btn-sm btn-warning modBtn"><i class="fa fa-edit"></i> 정보 수정</button>
+			        <button onclick="chkDelete(${list[0].suid })" class="btn-sm btn-danger delBtn"><i class="fa fa-trash"></i> 포차 삭제</button>  
 				</div>			
 			</div>
 			
