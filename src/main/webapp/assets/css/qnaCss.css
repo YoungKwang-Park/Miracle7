@@ -35,7 +35,7 @@ div#root {
   
 .input-group {
 	position : relative;
-    width: 360px;
+    width: 380px;
 }
 
 button#searchBtn {
@@ -72,7 +72,7 @@ ul{
 }
 
 .nice-select {
-    width: 76px;
+    width: 109px;
 	line-height: 23px;
 	height: 32px;
 	float: right;
@@ -258,6 +258,7 @@ padding: 15px 20px;
 
 textarea#q_content{
 	height:160px;
+	line-height:20px;
 }
 button#btn0{
 	font-size: 13px;
@@ -290,3 +291,9 @@ p#answer_p{
 	font-size : 12px; margin-bottom:0px; float : right; margin-right: 4px;
 }
 
+<<<<<<< HEAD
+li.option{
+	display:block;
+}
+=======
+>>>>>>> branch 'master' of https://github.com/YoungKwang-Park/Miracle7.git

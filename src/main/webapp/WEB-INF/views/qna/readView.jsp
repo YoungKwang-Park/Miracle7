@@ -86,7 +86,7 @@ $(document).ready(function(){
 	        if(fn_valiChk()){
 				return false;
 			}
-	        alert ("댓글등록완료!");
+	        alert ("답변등록완료! 고마워요 ><");
 	        formObj.attr("action", "q_answerWrite");
 	        formObj.attr("method", "post");
 	        formObj.submit();

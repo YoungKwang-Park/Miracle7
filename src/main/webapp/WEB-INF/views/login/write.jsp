@@ -200,7 +200,7 @@ function chkSubmit() {
          <div class="row">
              <div class="col-xl-12">
                  <div class="hero-cap text-center pt-50">
-                     <h2>Sign Up</h2>
+                     <h2>회원가입</h2>
                  </div>
              </div>
          </div>
@@ -328,29 +328,29 @@ function execPostCode() {
 <div class="signcontainer" style="width:40%; margin:auto;">
 <h2>Miracle7 회원가입</h2>
 <form name="join" action="writeOk" method="post" id="regForm" onsubmit="return chkSubmit()" >
-가입구분: <br><br>
+가입구분 <br>
 <input type="radio" name="auth" value="ROLE_MEMBER" checked/>일반회원
 <input type="radio" name="auth" value="ROLE_CEO"/>상인회원
 <br><br><br>
-아이디: <br>
+아이디 <br>
 <input type="text" name="id" id="id" /> 영문 대소문자, 숫자만 사용가능! (4 ~ 12글자)
 
 <button name="idChk" class="idChk" type="button" id="idChk" onclick="fn_idChk();" value="N">중복확인</button><br><br>
-비밀번호: <br>
+비밀번호 <br>
 <input type="password" name="pw" id="pw"/>아이디와 동일하면 안됩니다! (4 ~ 12 글자)<br><br>
-비밀번호 확인:<br>
+비밀번호 확인<br>
 <input type="password" name="pw2" id="pw2"/><br><br>
-이름:<br>
+이름<br>
 <input type="text" name="name" id="name"/>2글자 이상 입력주세요!<br><br>
 
-주소:<br>
+주소<br>
 <input class="form-control" style="width: 10%; display: inline;" placeholder="우편번호" name="addr" id="addr" type="text" readonly="readonly" />
     <button type="button" class="btn btn-default" onclick="execPostCode();"><i class="fa fa-search"></i> 우편번호 찾기</button>  <br>                             
 <input class="form-control" style="top: 5px; width: 20%;"   placeholder="도로명 주소" name="addr2" id="addr2" type="text" readonly="readonly" /> <br>
 <input class="form-control" placeholder="상세주소" name="addr3" id="addr3" type="text"  />
 <br>
 
-휴대폰번호:<br>
+휴대폰번호<br>
 <select name="pn" id="pn" style="width:60px" class="mgr8">
 		<option value="010">010</option>
 		<option value="011">011</option>
@@ -363,7 +363,7 @@ function execPostCode() {
 	<input name="pn3" id="pn3" maxlength="4" type="text" pattern="[0-9]+" style="width:45px"/> 숫자만 입력해주세요!!^^
 <br><br>
 
-e-mail:<br>
+e-mail<br>
 <input type="text" name="email" id="email">  @  <input type="text" name="email2" id="email2" >
 
 <select  name="email2" id="email_sel" onchange="email_change()" class="enb" >

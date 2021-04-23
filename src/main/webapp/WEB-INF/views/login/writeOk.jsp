@@ -11,33 +11,9 @@
 	<c:otherwise>
 		<script>
 			alert("짝짝짝! 가입을 축하합니다!");
-			location.href = "./login";
+			location.href = "./index";
 		</script>
 	</c:otherwise>
 </c:choose>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

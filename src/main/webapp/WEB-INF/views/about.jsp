@@ -53,7 +53,7 @@
          <div class="row">
              <div class="col-xl-12">
                  <div class="hero-cap text-center pt-50">
-                     <h2>About Miracle7</h2>
+                     <h2> 하나가 모여 7개의 기적을 만들어 갑니다. </h2>
                  </div>
              </div>
          </div>
@@ -70,7 +70,7 @@
                 <!-- Section Tittle -->
                 <div class="section-tittle text-center mb-80">
                     <span>Miracle 7</span>
-                    <h2>비전공자 일곱명의 첫 프로젝트!</h2>
+                    <h2>비전공자 7인의 첫! 전집중 프로젝트!</h2>
                 </div> 
             </div>
         </div>
@@ -82,7 +82,7 @@
                         <!-- Testimonial Content -->
                         <div class="testimonial-caption ">
                             <div class="testimonial-top-cap">
-                                <p> 나중에 업데이트 할게 </p>
+                                <p> 기획자의 욕심을 따라가려면 실력을 많이 키워야겠어요! °˖✧◝(⁰▿⁰)◜✧˖° <br> 팀에서 '원대한 꿈'과 의견 막던지기, 그리고 '나이'를 맡았습니다. </p>
                             </div>
                             <!-- founder -->
                             <div class="testimonial-founder d-flex align-items-center justify-content-center mb-30">
@@ -91,7 +91,7 @@
                                 </div>
                                 <div class="founder-text">
                                     <span>날아라펭귄</span>
-                                    <p>MAIN팀 - 박수지</p>
+                                    <p>MAIN팀[부팀장] - 박수지</p>
                                 </div>
                             </div>
                         </div>
@@ -101,7 +101,7 @@
                         <!-- Testimonial Content -->
                         <div class="testimonial-caption ">
                             <div class="testimonial-top-cap">
-                                <p> 걱정만 가지고 시작했던 팀 프로젝트.. 완벽하게 만들진 못했지만 웹에 구동원리, 준비과정, 등등 많은걸 배웠습니다. 담당기능은 회원가입 기능을 담당하였습니다 </p>
+                                <p> 걱정만 가지고 시작했던 팀 프로젝트.. <br> 모든기능을 완벽구현하진 못했지만 웹에 구동원리, 준비과정, 등등 많은걸 배웠습니다. <br> 팀에서 '근육'과 회원가입 기능을 담당하였습니다. </p>
                             </div>
                             <!-- founder -->
                             <div class="testimonial-founder d-flex align-items-center justify-content-center mb-30">
@@ -120,7 +120,7 @@
                         <!-- Testimonial Content -->
                         <div class="testimonial-caption ">
                             <div class="testimonial-top-cap">
-                                <p> 나중에 업데이트 할게 </p>
+                                <p> 설렘반 걱정반 마음으로 시작한 프로젝트! <br> 실패도 많았지만, 새로운 것에 대해 도전하여 성과를 낸 것만으로도 기적이라고 생각합니다. <br> 팀에서 'G맛' 과 기능 서브총괄을 담당하였습니다. </p>
                             </div>
                             <!-- founder -->
                             <div class="testimonial-founder d-flex align-items-center justify-content-center mb-30">
@@ -129,7 +129,7 @@
                                 </div>
                                 <div class="founder-text">
                                     <span>김G맛</span>
-                                    <p>COMMUNITY팀 - 김병진</p>
+                                    <p>COMMUNITY팀[부팀장] - 김병진</p>
                                 </div>
                             </div>
                         </div>
@@ -139,7 +139,7 @@
                         <!-- Testimonial Content -->
                         <div class="testimonial-caption ">
                             <div class="testimonial-top-cap">
-                                <p> 프로젝트에 임하면서 쉽지는않았지만 함께 하는 것 뿐만 아니라 많은걸 배우게 된 시간이었습니다. 오픈 로그인API를 활용하여 Social Login 구현 및 연동 기능을 담당하였습니다. </p>
+                                <p> 프로젝트에 임하면서 쉽지는않았지만 함께 하는 것 뿐만 아니라 많은걸 배우게 된 시간이었습니다. <br> 팀에서 '강하늘'과 Open API를 이용한 소셜로그인을 담당하였습니다. </p>
                             </div>
                             <!-- founder -->
                             <div class="testimonial-founder d-flex align-items-center justify-content-center mb-30">
@@ -158,7 +158,7 @@
                         <!-- Testimonial Content -->
                         <div class="testimonial-caption ">
                             <div class="testimonial-top-cap">
-                                <p> 나중에 업데이트 할게 </p>
+                                <p> 비전공자 7명이 기적을 바라며 시작한 첫 프로젝트! <br> 저희 팀은 커뮤니케이션과 협업을 중시하여 최고의 결과 보다 최선을 결과를 만들어 내었다고 생각합니다. <br> 팀에서 '꼰대'와 '채찍'을 맡았습니다. </p>
                             </div>
                             <!-- founder -->
                             <div class="testimonial-founder d-flex align-items-center justify-content-center mb-30">
@@ -167,7 +167,7 @@
                                 </div>
                                 <div class="founder-text">
                                     <span>전집중상중호흡</span> 
-                                    <p>MIRACLE7팀장 - 박영광</p>
+                                    <p>MIRACLE 7 팀장 - 박영광</p>
                                 </div>
                             </div>
                         </div>
@@ -177,7 +177,7 @@
                         <!-- Testimonial Content -->
                         <div class="testimonial-caption ">
                             <div class="testimonial-top-cap">
-                                <p> 걱정과 달리 열심히 빨판을 날리며 코딩하느라 정신없는 한달을 보냈습니다 문엇! 전반적인 CSS와 QnA를 담당했습니다. </p>
+                                <p> 끊임없이 배우고 이해하자! 라는 마음으로 프로젝트에 임했습니다 <br> 개인적으로 많이 성장하게 된것 같아 기쁘고 팀원들에게 고맙습니다 ❤ <br>  팀에서 '문어'와 QnA를 담당했습니다. </p>
                             </div>
                             <!-- founder -->
                             <div class="testimonial-founder d-flex align-items-center justify-content-center mb-30">
@@ -196,7 +196,7 @@
                         <!-- Testimonial Content -->
                         <div class="testimonial-caption ">
                             <div class="testimonial-top-cap">
-                                <p> 팀원들에 비해 지식이 부족해서 잘 할 수 있을까 걱정이 가장 먼저 앞섰는데, 팀원들의 도움으로 맡은 파트를 잘 완수 할 수 있었습니다. 공지사항과 FAQ를 맡았습니다. </p>
+                                <p> 팀원들에 비해 지식이 부족해서 잘 할 수 있을까 걱정이 가장 먼저 앞섰는데,<br> 팀원들의 도움으로 맡은 파트를 잘 완수 할 수 있었습니다 <br> 팀에서 '바이러스'과 공지사항, FAQ를 맡았습니다. </p>
                             </div>
                             <!-- founder -->
                             <div class="testimonial-founder d-flex align-items-center justify-content-center mb-30">
@@ -204,7 +204,7 @@
                                     <img src="assets/img/testmonial/jung1.png" alt="">
                                 </div>
                                 <div class="founder-text">
-                                    <span>열심히일하는꿀벌</span>
+                                    <span>사랑e아픈2u</span>
                                     <p>COMMUNITY팀 - 김성중</p>
                                 </div>
                             </div>

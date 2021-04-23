@@ -109,27 +109,19 @@
  <!--Hero End -->
 <br><br><br><br><br>
 <form style="text-align: center;">
-<<<<<<< HEAD
 <h2>주소</h2>
 <h4 style="color: #a05a11; font-size: 30px;">서울 강남구 테헤란로26길 12</h4>
 </form>
 <div id="map_ma" class="map_1" >
 </div>
 <form style="text-align: center;"> 
-<h3>location</h3>
+<h3>Location</h3>
 <h3>역삼역 3번출구 에서 도보 3분</h3>
 <h3>tel. 010-7889-8745 fax.02-338-4609</h3>
 </form>
  <br><br><br><br><br>
-=======
-<h4 style="color: blue; font-size: 30px;">서울 강남구 테헤란로26길 12</h4>
-<h2>↓↓↓</h2>
-</form>
-<div id="map_ma" class="map_1" >
-</div> 
-<br><br><br><br><br>
+
  
->>>>>>> branch 'master' of https://github.com/YoungKwang-Park/Miracle7.git
 
 
 </main>

@@ -104,9 +104,9 @@
                         <div class="single-location mb-30">
                             <div class="location-img">
                                 <img src="assets/img/gallery/sik.png" alt="">
-                            </div>
-                            <div class="location-details">
-                                <a href="./listmain?searchType=c&keyword=메뉴1" class="location-btn">식</a>
+	                            <div class="location-details" style="left : 42%; block-size: 40%;">
+	                                <a href="./listmain?searchType=c&keyword=메뉴1" class="location-btn">식</a>
+	                            </div>
                             </div>
                         </div>
                     </div>
@@ -114,9 +114,9 @@
                         <div class="single-location mb-30">
                             <div class="location-img">
                                 <img src="assets/img/gallery/do.png" alt="">
-                            </div>
-                            <div class="location-details">
-                                <a href="./listmain?searchType=c&keyword=메뉴2" class="location-btn">도</a>
+	                            <div class="location-details" style="left : 42%; block-size: 40%;">
+	                                <a href="./listmain?searchType=c&keyword=메뉴2" class="location-btn">도</a>
+	                            </div>
                             </div>
                         </div>
                     </div>
@@ -124,9 +124,9 @@
                         <div class="single-location mb-30">
                             <div class="location-img">
                                 <img src="assets/img/gallery/rak.png" alt="">
-                            </div>
-                            <div class="location-details">	
-                                <a href="./listmain?searchType=c&keyword=메뉴3" class="location-btn">락</a>
+	                            <div class="location-details" style="left : 42%; block-size: 40%;">	
+	                                <a href="./listmain?searchType=c&keyword=메뉴3" class="location-btn">락</a>
+	                            </div>
                             </div>
                         </div>
                     </div>
